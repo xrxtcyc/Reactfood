@@ -1,6 +1,8 @@
 # Reactfood
 <img width="1635" height="874" alt="pro093603" src="https://github.com/user-attachments/assets/d7cb6535-86c0-479c-8d44-28044ee6bb38" />
-<img width="93" height="43" alt="image" src="https://github.com/user-attachments/assets/63ced11e-38f3-4ae7-926b-37d9bff49c66" />
+
+<img width="93" height="43" alt="image" src="https://github.com/user-attachments/assets/63ced11e-38f3-4ae7-926b-37d9bff49c66" /> <img width="74" height="37" alt="image" src="https://github.com/user-attachments/assets/115e13b4-e50a-44ea-a2dd-c97a973099a5" />
+
 
 UI/Button.jsx 커스텀 버튼 컴포넌트 
 재사용성과 유연성을 고려해 설계한 커스텀 버튼 컴포넌트입니다.
