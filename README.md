@@ -22,50 +22,23 @@ children을 활용해 내부 콘텐츠(텍스트, 아이콘 등) 자유롭게 �
 
 🔍 주요 부분별 설명
 1. CartContext 생성
-js
-복사
-편집
-const CartContext = createContext({
-  items: [],
-  addItem: (item) => {},
-  removeItem: (id) => {},
-  clearCart: () => {},
-});
-Context 기본값 정의 (초기 items와 API 모양만 명시해 둠)
-
-실제 로직은 Provider에서 구현됨
-
 2. cartReducer – 상태 업데이트 로직
-js
-복사
-편집
-function cartReducer(state, action) {
-  if (action.type === 'ADD_ITEM') { ... }
-  if (action.type === 'REMOVE_ITEM') { ... }
-  if (action.type === 'CLEAR_CART') { ... }
-  return state;
-}
 state: 현재 장바구니 상태
-
 action: 어떤 행동을 할지 명시 (type과 함께 필요한 payload도 전달됨)
 
 ✅ ADD_ITEM 로직
 이미 있는 아이템이면 quantity 증가
-
 없으면 새로 추가
 
 ✅ REMOVE_ITEM 로직
 quantity가 1이면 삭제
-
 그 이상이면 quantity 감소
 
 ✅ CLEAR_CART
 아이템 배열을 초기화
 
 3. CartContextProvider – 상태 공급자
-js
-복사
-편집
+
 export function CartContextProvider({ children }) {
   const [cart, dispatchCartAction] = useReducer(cartReducer, { items: [] });
 useReducer로 상태 관리 시작
@@ -75,27 +48,18 @@ cart: 현재 상태
 dispatchCartAction: 상태를 업데이트하는 함수
 
 4. addItem, removeItem, clearCart
-js
-복사
-편집
 function addItem(item) {
   dispatchCartAction({ type: 'ADD_ITEM', item });
 }
 이 함수들을 통해 외부 컴포넌트가 reducer를 직접 건드리지 않고 간접적으로 상태를 바꿀 수 있음
 
 5. Context 값 전달
-js
-복사
-편집
 <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>
 cartContext 객체로 하위 컴포넌트에 상태와 함수들 제공
 
 예: useContext(CartContext)로 받아서 사용 가능
 
 💡 실제 사용 예시 (다른 컴포넌트에서)
-jsx
-복사
-편집
 import { useContext } from 'react';
 import CartContext from './path/to/CartContext';
 
