@@ -49,11 +49,11 @@ cart: 현재 상태
 
 dispatchCartAction: 상태를 업데이트하는 함수
 
-4. addItem, removeItem, clearCart
+### 4. addItem, removeItem, clearCart ###
 
 이 함수들을 통해 외부 컴포넌트가 reducer를 직접 건드리지 않고 간접적으로 상태를 바꿀 수 있음
 
-5. Context 값 전달
+### 5. Context 값 전달 ###
 
 cartContext 객체로 하위 컴포넌트에 상태와 함수들 제공
 
