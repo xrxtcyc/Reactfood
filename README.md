@@ -74,7 +74,8 @@ function ProductItem({ product }) {
     <button onClick={handleAddToCart}>장바구니에 추가</button>
   );
 }
-✅ 요약
+
+### ✅ 요약 ###
 
 Context: 상태 공유
 
