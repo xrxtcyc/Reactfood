@@ -87,4 +87,7 @@ hideCart() → 상태를 초기화 ('')해서 장바구니를 숨깁니다.
 showCheckout() → 상태를 'checkout'으로 바꿔서 결제 화면을 보여줍니다.
 
 hideCheckout() → 상태를 초기화해서 결제 화면을 숨깁니다.
+
+<img width="1567" height="835" alt="image" src="https://github.com/user-attachments/assets/b6e2be95-3c43-46cc-934f-a7e8c99358dd" />
+
 <img width="1694" height="863" alt="image" src="https://github.com/user-attachments/assets/aaed7cc0-597a-4c51-b44a-855df7a47a2e" />
