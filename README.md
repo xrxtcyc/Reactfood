@@ -23,7 +23,7 @@ children을 활용해 내부 콘텐츠(텍스트, 아이콘 등) 자유롭게 �
 
 **1. CartContext 생성**
 
-##2. cartReducer – 상태 업데이트 로직###
+## 2. cartReducer – 상태 업데이트 로직 ###
 
 state: 현재 장바구니 상태
 action: 어떤 행동을 할지 명시 (type과 함께 필요한 payload도 전달됨)
