@@ -69,7 +69,7 @@ ref={dialog}: 위에서 만든 ref로 이 DOM 요소에 접근합니다.
 onClose={onClose}: 모달이 닫힐 때 콜백 함수 실행.
 
 ## UserProgressContext – 전역 상태 관리 (React Context API)
-React의 Context API를 사용해 장바구니(cart) 및 결제(checkout) 진행 상태를 전역에서 관리하는 로직을 구현했습니다. 각 상태 전환 함수를 함께 제공함으로써 컴포넌트 간 복잡한 props 전달 없이 UI 흐름 제어가 가능합니다.
+### React의 Context API를 사용해 장바구니(cart) 및 결제(checkout) 진행 상태를 전역에서 관리하는 로직을 구현했습니다. 각 상태 전환 함수를 함께 제공함으로써 컴포넌트 간 복잡한 props 전달 없이 UI 흐름 제어가 가능합니다.
 
 progress 상태를 통해 'cart', 'checkout', ''(초기 상태) 중 현재 화면을 구분
 
@@ -79,7 +79,7 @@ hideCart(), hideCheckout() 함수로 상태 초기화 및 종료 처리
 
 전역 상태로 관리하여 다수의 컴포넌트에서 접근 가능
 
-3. 장바구니와 결제 상태를 다루는 함수들
+### 장바구니와 결제 상태를 다루는 함수들
 showCart() → 상태를 'cart'로 바꿔서 장바구니를 보여줍니다.
 
 hideCart() → 상태를 초기화 ('')해서 장바구니를 숨깁니다.
