@@ -5,7 +5,7 @@
 ## UI/Button.jsx 커스텀 버튼 컴포넌트
 <img width="93" height="43" alt="image" src="https://github.com/user-attachments/assets/63ced11e-38f3-4ae7-926b-37d9bff49c66" /> <img width="74" height="37" alt="image" src="https://github.com/user-attachments/assets/115e13b4-e50a-44ea-a2dd-c97a973099a5" />
 
-재사용성과 유연성을 고려해 설계한 커스텀 버튼 컴포넌트입니다.
+재사용성과 유연성을 고려해 설계한 **커스텀 버튼 컴포넌트**입니다.
 textOnly, className, children, 그리고 기타 HTML 속성을 props로 받아, 다양한 디자인과 동작을 한 컴포넌트로 구현할 수 있도록 구성했습니다.
 
 textOnly prop으로 텍스트 전용 스타일 적용 가능
@@ -21,8 +21,8 @@ children을 활용해 내부 콘텐츠(텍스트, 아이콘 등) 자유롭게 �
 ## 장바구니 상태 관리 기능 (React Context + useReducer)
 <img width="1550" height="814" alt="image" src="https://github.com/user-attachments/assets/0f1716bc-9b2c-4911-84b1-06b6d4c3b98f" />
 
-1. CartContext 생성
-2. cartReducer – 상태 업데이트 로직
+**1. CartContext 생성**
+**2. cartReducer – 상태 업데이트 로직**
 
 state: 현재 장바구니 상태
 action: 어떤 행동을 할지 명시 (type과 함께 필요한 payload도 전달됨)
