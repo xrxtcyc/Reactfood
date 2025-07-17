@@ -19,6 +19,9 @@ children을 활용해 내부 콘텐츠(텍스트, 아이콘 등) 자유롭게 �
 해당 컴포넌트를 통해 프로젝트 전반에서 일관된 버튼 UI를 유지하면서, 필요에 따라 다양한 스타일을 간편하게 적용할 수 있도록 했습니다.
 
 ## 장바구니 상태 관리 기능 (React Context + useReducer)
+
+<img width="1567" height="835" alt="image" src="https://github.com/user-attachments/assets/b6e2be95-3c43-46cc-934f-a7e8c99358dd" />
+
 <img width="1550" height="814" alt="image" src="https://github.com/user-attachments/assets/0f1716bc-9b2c-4911-84b1-06b6d4c3b98f" />
 
 ### 1. CartContext 생성 ###
@@ -87,7 +90,5 @@ hideCart() → 상태를 초기화 ('')해서 장바구니를 숨깁니다.
 showCheckout() → 상태를 'checkout'으로 바꿔서 결제 화면을 보여줍니다.
 
 hideCheckout() → 상태를 초기화해서 결제 화면을 숨깁니다.
-
-<img width="1567" height="835" alt="image" src="https://github.com/user-attachments/assets/b6e2be95-3c43-46cc-934f-a7e8c99358dd" />
 
 <img width="1694" height="863" alt="image" src="https://github.com/user-attachments/assets/aaed7cc0-597a-4c51-b44a-855df7a47a2e" />
