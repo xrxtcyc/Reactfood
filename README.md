@@ -62,7 +62,6 @@ Reducer: 상태 변경 규칙
 Provider: 둘을 연결해서 외부에서 쉽게 사용할 수 있게 해줌
 
 ## UI/Button.jsx 커스텀 버튼 컴포넌트
-
 createPortal을 이용해 이 모달을 다른 DOM 위치에 렌더링합니다.
 
 예: 모달을 <div id="modal"></div> 안에 그립니다.
@@ -72,3 +71,5 @@ createPortal을 이용해 이 모달을 다른 DOM 위치에 렌더링합니다.
 ref={dialog}: 위에서 만든 ref로 이 DOM 요소에 접근합니다.
 
 onClose={onClose}: 모달이 닫힐 때 콜백 함수 실행.
+
+
