@@ -73,7 +73,6 @@ function ProductItem({ product }) {
   );
 }
 ✅ 요약
-이 구조는 Redux보다 간단하게 React에서 전역 상태를 관리하는 패턴입니다:
 
 Context: 상태 공유
 
@@ -81,18 +80,5 @@ Reducer: 상태 변경 규칙
 
 Provider: 둘을 연결해서 외부에서 쉽게 사용할 수 있게 해줌
 
-필요하면 이 구조를 로그인 상태 관리, 모달 창 열림/닫힘, UI 테마 등에도 동일하게 응용할 수 있어요.
-더 응용 예제나 개선 포인트가 필요하다면 알려줘!
 
-장바구니 상태 관리 기능 (React Context + useReducer)
-useReducer와 Context API를 조합하여 전역 상태 관리 기능을 직접 구현했습니다.
-장바구니 항목 추가, 수량 조절, 삭제, 초기화 등의 액션을 하나의 reducer로 처리하고,
-전역 CartContext를 통해 여러 컴포넌트에서 상태를 공유할 수 있도록 구성했습니다.
 
-useReducer를 활용한 복잡한 상태 관리 (아이템 중복 시 수량 증가 등)
-
-dispatch 패턴을 통해 명확하고 예측 가능한 상태 전이 설계
-
-createContext와 Context.Provider로 전역 접근 가능한 상태 관리
-
-성능 최적화를 고려하여 불필요한 리렌더링 방지 구조 설계
