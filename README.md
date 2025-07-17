@@ -41,10 +41,6 @@ quantity가 1이면 삭제
 
 ### 3. CartContextProvider – 상태 공급자 ###
 
-export function CartContextProvider({ children }) {
-  const [cart, dispatchCartAction] = useReducer(cartReducer, { items: [] });
-useReducer로 상태 관리 시작
-
 cart: 현재 상태
 
 dispatchCartAction: 상태를 업데이트하는 함수
@@ -56,24 +52,6 @@ dispatchCartAction: 상태를 업데이트하는 함수
 ### 5. Context 값 전달 ###
 
 cartContext 객체로 하위 컴포넌트에 상태와 함수들 제공
-
-예: useContext(CartContext)로 받아서 사용 가능
-
-💡 실제 사용 예시 (다른 컴포넌트에서)
-import { useContext } from 'react';
-import CartContext from './path/to/CartContext';
-
-function ProductItem({ product }) {
-  const cartCtx = useContext(CartContext);
-
-  function handleAddToCart() {
-    cartCtx.addItem(product);
-  }
-
-  return (
-    <button onClick={handleAddToCart}>장바구니에 추가</button>
-  );
-}
 
 ### ✅ 요약 ###
 
