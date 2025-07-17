@@ -20,7 +20,6 @@ children을 활용해 내부 콘텐츠(텍스트, 아이콘 등) 자유롭게 �
 
 <img width="1550" height="814" alt="image" src="https://github.com/user-attachments/assets/0f1716bc-9b2c-4911-84b1-06b6d4c3b98f" />
 
-🔍 주요 부분별 설명
 1. CartContext 생성
 2. cartReducer – 상태 업데이트 로직
 state: 현재 장바구니 상태
