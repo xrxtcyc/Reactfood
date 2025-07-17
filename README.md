@@ -22,8 +22,6 @@ children을 활용해 내부 콘텐츠(텍스트, 아이콘 등) 자유롭게 �
 
 <img width="1567" height="835" alt="image" src="https://github.com/user-attachments/assets/b6e2be95-3c43-46cc-934f-a7e8c99358dd" />
 
-<img width="1550" height="814" alt="image" src="https://github.com/user-attachments/assets/0f1716bc-9b2c-4911-84b1-06b6d4c3b98f" />
-
 ### 1. CartContext 생성 ###
 
 ### 2. CartReducer – 상태 업데이트 로직 ###
@@ -72,6 +70,9 @@ ref={dialog}: 위에서 만든 ref로 이 DOM 요소에 접근합니다.
 onClose={onClose}: 모달이 닫힐 때 콜백 함수 실행.
 
 ## UserProgressContext – 전역 상태 관리 (React Context API)
+
+<img width="1550" height="814" alt="image" src="https://github.com/user-attachments/assets/0f1716bc-9b2c-4911-84b1-06b6d4c3b98f" />
+
 ### React의 Context API를 사용해 장바구니(cart) 및 결제(checkout) 진행 상태를 전역에서 관리하는 로직을 구현했습니다. 각 상태 전환 함수를 함께 제공함으로써 컴포넌트 간 복잡한 props 전달 없이 UI 흐름 제어가 가능합니다.
 
 progress 상태를 통해 'cart', 'checkout', ''(초기 상태) 중 현재 화면을 구분
