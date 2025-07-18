@@ -1,4 +1,10 @@
 # Reactfood
+Reactfood 프로젝트에서는 React를 기반으로 한 컴포넌트 중심 설계를 통해 사용자 인터페이스를 개발했습니다. 장바구니와 결제 상태와 같은 전역 상태 관리를 위해 Context API와 useReducer를 활용하여, 복잡한 상태 전이와 데이터 흐름을 구조적으로 처리했습니다.
+
+모달과 같은 UI 요소는 createPortal을 통해 별도의 DOM 위치에 렌더링함으로써 깔끔하고 직관적인 사용자 경험을 제공하였고, useRef와 useEffect를 이용해 DOM 제어 및 생명 주기 관리를 효과적으로 수행했습니다.
+
+또한, 주문 데이터를 서버로 전송할 때는 useActionState를 활용하여 폼 제출 상태를 관리했고, 커스텀 훅인 useHttp를 만들어 HTTP 요청 처리 로직을 재사용 가능하게 분리하여 네트워크 통신 흐름의 일관성과 유지보수성을 높였습니다.
+
 <img width="1635" height="874" alt="pro093603" src="https://github.com/user-attachments/assets/d7cb6535-86c0-479c-8d44-28044ee6bb38" />
 
 
