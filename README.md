@@ -93,3 +93,6 @@ showCheckout() → 상태를 'checkout'으로 바꿔서 결제 화면을 보여�
 hideCheckout() → 상태를 초기화해서 결제 화면을 숨깁니다.
 
 <img width="1694" height="863" alt="image" src="https://github.com/user-attachments/assets/aaed7cc0-597a-4c51-b44a-855df7a47a2e" />
+
+ Checkout 컴포넌트는 React Context, 커스텀 훅(useHttp), 그리고 HTML Form과 useActionState를 통한 폼 제출 처리를 사용하는 결제(Checkout) 모달입니다.
+주요 기능은: 장바구니 데이터를 보여주고, 사용자 정보를 입력받아 서버로 주문 데이터를 전송하는 것입니다.
