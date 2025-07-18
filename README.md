@@ -99,3 +99,4 @@ hideCheckout() → 상태를 초기화해서 결제 화면을 숨깁니다.
 주요 기능은: 장바구니 데이터를 보여주고, 사용자 정보를 입력받아 서버로 주문 데이터를 전송하는 것입니다.
 
 <img width="1602" height="805" alt="image" src="https://github.com/user-attachments/assets/2345effc-6686-493e-8598-dd7d374b94d2" />
+<img width="1639" height="847" alt="image" src="https://github.com/user-attachments/assets/db9a4674-feee-4a26-873a-665853528569" />
